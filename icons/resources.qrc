@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>wave-spiral-sphere.png</file>
+  </qresource>
+</RCC>
