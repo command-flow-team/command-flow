@@ -14,9 +14,9 @@ class MainWindow(QMainWindow):
         loadUi("command-flow-main-window.ui", self)
 
         # Title bar
-        self.title_bar.mousePressEvent = self.mousePressEvent
-        self.title_bar.mouseMoveEvent = self.mouseMoveEvent
-        self.title_bar.mouseReleaseEvent = self.mouseReleaseEvent
+        #self.title_bar.mousePressEvent = self.mousePressEvent
+        #self.title_bar.mouseMoveEvent = self.mouseMoveEvent
+        #self.title_bar.mouseReleaseEvent = self.mouseReleaseEvent
 
         # Set up NavigationController
         self.navigator = NavigationController(self.mainZone)
@@ -28,11 +28,20 @@ class MainWindow(QMainWindow):
         self.btn_close.clicked.connect(self.close)
         self.btn_minimize.clicked.connect(self.showMinimized)
 
-    def mousePressEvent(self, event):
+        #Inintialize variables for dragging(Title bar)
+        self.mouse_dragging = False
+        self.drag_position = QPoint()
+
+    '''def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
             self.mouse_dragging = True
             self.drag_position = (event.globalPos() - self.frameGeometry().
                                   topLeft())
+    '''
+    def mousePressEvent(self, event):
+        if event.button() == Qt.LeftButton and self.title_bar.geometry().contains(event.pos()):
+            self.mouse_dragging = True
+            self.drag_position = event.globalPos() - self.frameGeometry().topLeft()
 
     def mouseMoveEvent(self, event):
         if self.mouse_dragging:
