@@ -47,9 +47,9 @@ border-radius: 27;
    <widget class="QLineEdit" name="search_bar_line">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>220</x>
       <y>5</y>
-      <width>341</width>
+      <width>381</width>
       <height>48</height>
      </rect>
     </property>
@@ -255,8 +255,8 @@ border-radius: 27;
     <property name="font">
      <font>
       <family>Munson</family>
-      <pointsize>16</pointsize>
-      <italic>false</italic>
+      <pointsize>18</pointsize>
+      <italic>true</italic>
       <bold>false</bold>
       <underline>false</underline>
       <strikeout>false</strikeout>
@@ -264,7 +264,7 @@ border-radius: 27;
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #131313;
-font: 16pt &quot;Munson&quot;;
+font: italic 18pt &quot;Munson&quot;;
 border-radius: 24;
 padding-left: 15;
 padding-right: 15;
@@ -278,16 +278,16 @@ color: white;
      <string/>
     </property>
     <property name="placeholderText">
-     <string>search</string>
+     <string>search . . . </string>
     </property>
    </widget>
    <widget class="QStackedWidget" name="mainZone">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>70</y>
-      <width>731</width>
-      <height>521</height>
+      <x>50</x>
+      <y>0</y>
+      <width>751</width>
+      <height>601</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -298,7 +298,7 @@ color: white;
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>10</y>
+        <y>50</y>
         <width>151</width>
         <height>81</height>
        </rect>
@@ -317,7 +317,7 @@ font: 20pt &quot;Munson&quot;;</string>
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>120</y>
+        <y>180</y>
         <width>121</width>
         <height>31</height>
        </rect>
@@ -330,6 +330,19 @@ color: white;</string>
       </property>
       <property name="text">
        <string>add card</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="ccmd_zone" native="true">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>601</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #162025;</string>
       </property>
      </widget>
     </widget>
@@ -404,8 +417,12 @@ font: 14pt &quot;Munson&quot;;</string>
        <height>51</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font: 14pt &quot;Munson&quot;;</string>
+     </property>
      <property name="text">
-      <string>settings</string>
+      <string>stngs</string>
      </property>
     </widget>
    </widget>
@@ -457,16 +474,16 @@ font: 700 20pt &quot;Munson&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: tomato;</string>
+     <string notr="true">background-color: #131313;</string>
     </property>
    </widget>
-   <zorder>title_bar</zorder>
-   <zorder>search_bar</zorder>
-   <zorder>search_bar_line</zorder>
    <zorder>mainZone</zorder>
+   <zorder>title_bar</zorder>
    <zorder>widget</zorder>
    <zorder>btn_close</zorder>
    <zorder>btn_minimize</zorder>
+   <zorder>search_bar</zorder>
+   <zorder>search_bar_line</zorder>
   </widget>
  </widget>
  <resources>

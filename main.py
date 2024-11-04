@@ -5,6 +5,7 @@ from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.uic import loadUi
 from navigation_controller import NavigationController
+from ccmd_mng import ccmd_widgets
 
 
 class MainWindow(QMainWindow):
@@ -13,11 +14,6 @@ class MainWindow(QMainWindow):
         self.setWindowFlag(Qt.FramelessWindowHint)
         loadUi("command-flow-main-window.ui", self)
 
-        # Title bar
-        #self.title_bar.mousePressEvent = self.mousePressEvent
-        #self.title_bar.mouseMoveEvent = self.mouseMoveEvent
-        #self.title_bar.mouseReleaseEvent = self.mouseReleaseEvent
-
         # Set up NavigationController
         self.navigator = NavigationController(self.mainZone)
         self.navigator.go_to_default()
@@ -25,20 +21,19 @@ class MainWindow(QMainWindow):
         # Button connections
         self.home_button.clicked.connect(self.navigator.go_to_home)
         self.cmd_button.clicked.connect(self.navigator.go_to_command)
-
         self.btn_close.clicked.connect(self.close)
         self.btn_minimize.clicked.connect(self.showMinimized)
 
-        #Inintialize variables for dragging(Title bar)
+        # Initialize ccmd_widgets instance
+        self.ccmd_manager = ccmd_widgets()
+
+        # Connect add_ccmd_button to create_ccmd method
+        self.add_ccmd_button.clicked.connect(lambda: self.ccmd_manager.create_ccmd(self.ccmd_zone))
+
+        # Initialize variables for dragging (Title bar)
         self.mouse_dragging = False
         self.drag_position = QPoint()
 
-    '''def mousePressEvent(self, event):
-        if event.button() == Qt.LeftButton:
-            self.mouse_dragging = True
-            self.drag_position = (event.globalPos() - self.frameGeometry().
-                                  topLeft())
-    '''
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton and self.title_bar.geometry().contains(event.pos()):
             self.mouse_dragging = True
@@ -50,7 +45,7 @@ class MainWindow(QMainWindow):
 
     def mouseReleaseEvent(self, event):
         if event.button() == Qt.LeftButton:
-           self.mouse_dragging = False
+            self.mouse_dragging = False
 
 
 app = QApplication(sys.argv)
