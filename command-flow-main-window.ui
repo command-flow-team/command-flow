@@ -291,7 +291,7 @@ color: white;
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="homePage">
      <widget class="QLabel" name="label">
@@ -313,17 +313,23 @@ font: 20pt &quot;Munson&quot;;</string>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QLabel" name="label_2">
+     <widget class="QPushButton" name="add_ccmd_button">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>170</y>
-        <width>49</width>
-        <height>16</height>
+        <x>30</x>
+        <y>120</y>
+        <width>121</width>
+        <height>31</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: tomato;
+border-radius: 15;
+font: 700 italic 14pt &quot;Munson&quot;;
+color: white;</string>
+      </property>
       <property name="text">
-       <string>cmd</string>
+       <string>add card</string>
       </property>
      </widget>
     </widget>
@@ -380,6 +386,10 @@ background-color: white;
        <width>51</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font: 14pt &quot;Munson&quot;;</string>
      </property>
      <property name="text">
       <string>cmd</string>
@@ -447,7 +457,7 @@ font: 700 20pt &quot;Munson&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #2A2D34;</string>
+     <string notr="true">background-color: tomato;</string>
     </property>
    </widget>
    <zorder>title_bar</zorder>

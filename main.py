@@ -20,6 +20,7 @@ class MainWindow(QMainWindow):
 
         # Set up NavigationController
         self.navigator = NavigationController(self.mainZone)
+        self.navigator.go_to_default()
 
         # Button connections
         self.home_button.clicked.connect(self.navigator.go_to_home)
