@@ -312,7 +312,7 @@ font: 20pt &quot;Munson&quot;;</string>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_2">
+    <widget class="QWidget" name="ccmdPage">
      <widget class="QPushButton" name="add_ccmd_button">
       <property name="geometry">
        <rect>
@@ -382,11 +382,11 @@ background-color: white;
      </property>
      <property name="icon">
       <iconset resource="icons/resources.qrc">
-       <normaloff>:/icons/wave-spiral-sphere.png</normaloff>:/icons/wave-spiral-sphere.png</iconset>
+       <normaloff>:/icons/home-icon-svg.png</normaloff>:/icons/home-icon-svg.png</iconset>
      </property>
      <property name="iconSize">
       <size>
-       <width>64</width>
+       <width>60</width>
        <height>64</height>
       </size>
      </property>
@@ -395,7 +395,7 @@ background-color: white;
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>110</y>
+       <y>130</y>
        <width>51</width>
        <height>51</height>
       </rect>
@@ -405,7 +405,17 @@ background-color: white;
 font: 14pt &quot;Munson&quot;;</string>
      </property>
      <property name="text">
-      <string>cmd</string>
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons/resources.qrc">
+       <normaloff>:/icons/command-icon-svg.png</normaloff>:/icons/command-icon-svg.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="settings_button">
@@ -422,7 +432,17 @@ font: 14pt &quot;Munson&quot;;</string>
 font: 14pt &quot;Munson&quot;;</string>
      </property>
      <property name="text">
-      <string>stngs</string>
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="icons/resources.qrc">
+       <normaloff>:/icons/settings-icon-svg.png</normaloff>:/icons/settings-icon-svg.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
      </property>
     </widget>
    </widget>
@@ -487,7 +507,6 @@ font: 700 20pt &quot;Munson&quot;;</string>
   </widget>
  </widget>
  <resources>
-  <include location="icons/resources.qrc"/>
   <include location="icons/resources.qrc"/>
  </resources>
  <connections/>

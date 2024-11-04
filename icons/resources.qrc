@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="icons">
+    <file>command-icon-svg.png</file>
+    <file>home-icon-svg.png</file>
+    <file>settings-icon-svg.png</file>
     <file>wave-spiral-sphere.png</file>
   </qresource>
 </RCC>
