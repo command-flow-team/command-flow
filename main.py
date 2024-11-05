@@ -18,17 +18,15 @@ class MainWindow(QMainWindow):
         self.navigator = NavigationController(self.mainZone)
         self.navigator.go_to_default()
 
+        # Initialize ccmd_widgets and connect button
+        self.ccmd_manager = ccmd_widgets(self.ccmd_zone)
+        self.add_ccmd_button.clicked.connect(lambda: self.ccmd_manager.create_ccmd("говновоз", 993))
+
         # Button connections
         self.home_button.clicked.connect(self.navigator.go_to_home)
         self.cmd_button.clicked.connect(self.navigator.go_to_command)
         self.btn_close.clicked.connect(self.close)
         self.btn_minimize.clicked.connect(self.showMinimized)
-
-        # Initialize ccmd_widgets instance
-        self.ccmd_manager = ccmd_widgets()
-
-        # Connect add_ccmd_button to create_ccmd method
-        self.add_ccmd_button.clicked.connect(lambda: self.ccmd_manager.create_ccmd(self.ccmd_zone))
 
         # Initialize variables for dragging (Title bar)
         self.mouse_dragging = False
