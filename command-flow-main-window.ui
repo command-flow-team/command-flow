@@ -33,23 +33,23 @@
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>-80</y>
+      <y>-81</y>
       <width>401</width>
       <height>141</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #009B72;
-border-radius: 27;
+border-radius: 10;
 </string>
     </property>
    </widget>
    <widget class="QLineEdit" name="search_bar_line">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>265</x>
       <y>5</y>
-      <width>381</width>
+      <width>338</width>
       <height>48</height>
      </rect>
     </property>
@@ -68,9 +68,9 @@ border-radius: 27;
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
@@ -95,18 +95,18 @@ border-radius: 27;
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
@@ -133,9 +133,9 @@ border-radius: 27;
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
@@ -160,18 +160,18 @@ border-radius: 27;
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
@@ -198,9 +198,9 @@ border-radius: 27;
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
@@ -225,18 +225,18 @@ border-radius: 27;
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>19</red>
-          <green>19</green>
-          <blue>19</blue>
+          <red>21</red>
+          <green>21</green>
+          <blue>21</blue>
          </color>
         </brush>
        </colorrole>
@@ -263,9 +263,9 @@ border-radius: 27;
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #131313;
+     <string notr="true">background-color: #151515;
 font: italic 18pt &quot;Munson&quot;;
-border-radius: 24;
+border-radius: 10;
 padding-left: 15;
 padding-right: 15;
 padding-bottom: 1;
@@ -313,11 +313,14 @@ font: 20pt &quot;Munson&quot;;</string>
      </widget>
     </widget>
     <widget class="QWidget" name="ccmdPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #151515;</string>
+     </property>
      <widget class="QPushButton" name="add_ccmd_button">
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>180</y>
+        <y>100</y>
         <width>121</width>
         <height>31</height>
        </rect>
@@ -332,18 +335,31 @@ color: white;</string>
        <string>add card</string>
       </property>
      </widget>
-     <widget class="QWidget" name="ccmd_zone" native="true">
+     <widget class="QScrollArea" name="ccmd_zone">
       <property name="geometry">
        <rect>
         <x>160</x>
         <y>20</y>
-        <width>601</width>
+        <width>591</width>
         <height>581</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: #162025;</string>
+       <string notr="true">background-color: #2A2D34</string>
       </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>589</width>
+         <height>579</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -352,12 +368,12 @@ color: white;</string>
      <rect>
       <x>-20</x>
       <y>-30</y>
-      <width>71</width>
+      <width>91</width>
       <height>671</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #131313;
+     <string notr="true">background-color: #151515;
 border-radius: 27;
 </string>
     </property>
@@ -365,9 +381,9 @@ border-radius: 27;
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>50</y>
-       <width>51</width>
-       <height>51</height>
+       <y>30</y>
+       <width>71</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -386,8 +402,8 @@ background-color: white;
      </property>
      <property name="iconSize">
       <size>
-       <width>60</width>
-       <height>64</height>
+       <width>75</width>
+       <height>75</height>
       </size>
      </property>
     </widget>
@@ -395,9 +411,9 @@ background-color: white;
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>130</y>
-       <width>51</width>
-       <height>51</height>
+       <y>110</y>
+       <width>71</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -421,8 +437,8 @@ font: 14pt &quot;Munson&quot;;</string>
     <widget class="QPushButton" name="settings_button">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>550</y>
+       <x>31</x>
+       <y>560</y>
        <width>51</width>
        <height>51</height>
       </rect>
@@ -445,6 +461,9 @@ font: 14pt &quot;Munson&quot;;</string>
       </size>
      </property>
     </widget>
+    <zorder>cmd_button</zorder>
+    <zorder>settings_button</zorder>
+    <zorder>home_button</zorder>
    </widget>
    <widget class="QPushButton" name="btn_close">
     <property name="geometry">
@@ -456,9 +475,9 @@ font: 14pt &quot;Munson&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #131313;
+     <string notr="true">background-color: #151515;
 border-radius: 10;
-color: tomato;
+color: #757575;
 font: 700 20pt &quot;Munson&quot;;</string>
     </property>
     <property name="text">
@@ -475,9 +494,9 @@ font: 700 20pt &quot;Munson&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #131313;
-border-radius: 10;
-color: tomato;
+     <string notr="true">background-color: #151515;
+border-radius: 20;
+color: #757575;
 font: 700 20pt &quot;Munson&quot;;</string>
     </property>
     <property name="text">
@@ -487,14 +506,36 @@ font: 700 20pt &quot;Munson&quot;;</string>
    <widget class="QWidget" name="title_bar" native="true">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>70</x>
       <y>0</y>
-      <width>761</width>
-      <height>21</height>
+      <width>731</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #131313;</string>
+     <string notr="true">background-color: #151515;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>14</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #009B72;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons/resources.qrc">:/icons/search_icon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <zorder>mainZone</zorder>
@@ -504,6 +545,7 @@ font: 700 20pt &quot;Munson&quot;;</string>
    <zorder>btn_minimize</zorder>
    <zorder>search_bar</zorder>
    <zorder>search_bar_line</zorder>
+   <zorder>label_2</zorder>
   </widget>
  </widget>
  <resources>
