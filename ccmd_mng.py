@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout, QScrollArea
+from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout, QScrollArea, QHBoxLayout
 from PyQt5.QtCore import Qt
 
 class CommandCard(QWidget):
@@ -14,13 +14,13 @@ class CommandCard(QWidget):
         
         self.number_label = QLabel(str(number))
         self.number_label.setAlignment(Qt.AlignCenter)
-        self.number_label.setStyleSheet("font-size: 14px;")  # Increase font size
+        self.number_label.setStyleSheet("font-size: 12px;")  # Increase font size
         layout.addWidget(self.number_label)
         
         self.setLayout(layout)
         
-        self.setStyleSheet("background-color: lightblue; border: 1px solid gray; padding: 15px;")  # Increase padding
-        self.setFixedSize(150, 100)  # Adjust size as needed (width, height)
+        self.setStyleSheet("background-color: #151515; padding: 15px; color: white; font: 600 24pt \"Afacad Flux\";")  # Increase padding
+        self.setFixedSize(140, 200)  # Adjust size as needed (width, height)
 
 class ccmd_widgets:
     def __init__(self, workzone):
@@ -35,6 +35,39 @@ class ccmd_widgets:
         self.scroll_widget = QWidget()
         self.scroll_widget.setLayout(self.layout)
         self.scroll_area.setWidget(self.scroll_widget)
+        self.scroll_area.setStyleSheet('''
+        QScrollBar:vertical {
+             background: #141414;
+             width: 15px;
+             margin: 22px 0 22px 0;
+        }
+        QScrollBar::handle:vertical {
+            background: #757575;
+            min-height: 20px;
+            border-radius: 3px;
+        }
+        QScrollBar::add-line:vertical {
+            background: #141414;
+            height: 20px;
+            subcontrol-position: bottom;
+            subcontrol-origin: margin;
+        }
+
+        QScrollBar::sub-line:vertical {
+            background: #141414;
+            height: 20px;
+            subcontrol-position: top;
+            subcontrol-origin: margin;
+        }
+        QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+            width: 3px;
+            height: 3px;
+            background: #757575;
+        }
+
+        QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+            background: none;
+        }''')
 
         # scroll area in the workzone
         workzone_layout = QVBoxLayout(workzone)

@@ -13,6 +13,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         self.setWindowFlag(Qt.FramelessWindowHint)
         loadUi("command-flow-main-window.ui", self)
+        self.ccmd_zone.setStyleSheet('''border-radius: 7px; background-color: #2C3037;''')
 
         # Set up NavigationController
         self.navigator = NavigationController(self.mainZone)
@@ -20,7 +21,7 @@ class MainWindow(QMainWindow):
 
         # Initialize ccmd_widgets and connect button
         self.ccmd_manager = ccmd_widgets(self.ccmd_zone)
-        self.add_ccmd_button.clicked.connect(lambda: self.ccmd_manager.create_ccmd("говновоз", 993))
+        self.add_ccmd_button.clicked.connect(lambda: self.ccmd_manager.create_ccmd("test card", 993))
 
         # Button connections
         self.home_button.clicked.connect(self.navigator.go_to_home)

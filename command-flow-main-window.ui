@@ -26,7 +26,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #2A2D34</string>
+   <string notr="true">background-color: #151515;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QListWidget" name="search_bar">
@@ -254,20 +254,20 @@ border-radius: 10;
     </property>
     <property name="font">
      <font>
-      <family>Munson</family>
-      <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>false</bold>
+      <family>Afacad Flux</family>
+      <pointsize>24</pointsize>
+      <italic>false</italic>
       <underline>false</underline>
       <strikeout>false</strikeout>
+      <fontweight>DemiBold</fontweight>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #151515;
-font: italic 18pt &quot;Munson&quot;;
+font: 600 24pt &quot;Afacad Flux&quot;;
 border-radius: 10;
-padding-left: 15;
-padding-right: 15;
+padding-left: 10;
+padding-right: 10;
 padding-bottom: 1;
 color: white;
 
@@ -278,17 +278,20 @@ color: white;
      <string/>
     </property>
     <property name="placeholderText">
-     <string>search . . . </string>
+     <string>search </string>
     </property>
    </widget>
    <widget class="QStackedWidget" name="mainZone">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>0</y>
-      <width>751</width>
-      <height>601</height>
+      <x>80</x>
+      <y>40</y>
+      <width>721</width>
+      <height>561</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 20px;</string>
     </property>
     <property name="currentIndex">
      <number>1</number>
@@ -304,17 +307,33 @@ color: white;
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: white;
-font: 20pt &quot;Munson&quot;;</string>
+       <string notr="true">background-color: #2C3037;
+color: white;
+font: 600 24pt &quot;Afacad Flux&quot;;</string>
       </property>
       <property name="text">
        <string>Home page</string>
       </property>
      </widget>
+     <widget class="QWidget" name="homePage_background" native="true">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>741</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #2C3037;</string>
+      </property>
+     </widget>
+     <zorder>homePage_background</zorder>
+     <zorder>label</zorder>
     </widget>
     <widget class="QWidget" name="ccmdPage">
      <property name="styleSheet">
-      <string notr="true">background-color: #151515;</string>
+      <string notr="true"/>
      </property>
      <widget class="QPushButton" name="add_ccmd_button">
       <property name="geometry">
@@ -328,7 +347,7 @@ font: 20pt &quot;Munson&quot;;</string>
       <property name="styleSheet">
        <string notr="true">background-color: tomato;
 border-radius: 15;
-font: 700 italic 14pt &quot;Munson&quot;;
+font: 700 21pt &quot;Afacad Flux&quot;;
 color: white;</string>
       </property>
       <property name="text">
@@ -339,13 +358,13 @@ color: white;</string>
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>20</y>
-        <width>591</width>
-        <height>581</height>
+        <y>0</y>
+        <width>561</width>
+        <height>561</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: #2A2D34</string>
+       <string notr="true">background-color: #2C3037;</string>
       </property>
       <property name="widgetResizable">
        <bool>true</bool>
@@ -355,12 +374,29 @@ color: white;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>589</width>
-         <height>579</height>
+         <width>561</width>
+         <height>561</height>
         </rect>
        </property>
       </widget>
      </widget>
+     <widget class="QWidget" name="ccmd_side_bar" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>171</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #2C3037;
+border-radius: 15px;</string>
+      </property>
+     </widget>
+     <zorder>ccmd_side_bar</zorder>
+     <zorder>ccmd_zone</zorder>
+     <zorder>add_ccmd_button</zorder>
     </widget>
    </widget>
    <widget class="QWidget" name="widget" native="true">
@@ -373,7 +409,7 @@ color: white;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #151515;
+     <string notr="true">
 border-radius: 27;
 </string>
     </property>
@@ -477,8 +513,8 @@ font: 14pt &quot;Munson&quot;;</string>
     <property name="styleSheet">
      <string notr="true">background-color: #151515;
 border-radius: 10;
-color: #757575;
-font: 700 20pt &quot;Munson&quot;;</string>
+color: #cbcbcb;
+font: 700 28pt &quot;Afacad Flux&quot;;</string>
     </property>
     <property name="text">
      <string>X</string>
@@ -497,7 +533,7 @@ font: 700 20pt &quot;Munson&quot;;</string>
      <string notr="true">background-color: #151515;
 border-radius: 20;
 color: #757575;
-font: 700 20pt &quot;Munson&quot;;</string>
+font: 700 28pt &quot;Afacad Flux&quot;;</string>
     </property>
     <property name="text">
      <string>—</string>
@@ -509,11 +545,11 @@ font: 700 20pt &quot;Munson&quot;;</string>
       <x>70</x>
       <y>0</y>
       <width>731</width>
-      <height>61</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #151515;</string>
+     <string notr="true"/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -540,12 +576,12 @@ font: 700 20pt &quot;Munson&quot;;</string>
    </widget>
    <zorder>mainZone</zorder>
    <zorder>title_bar</zorder>
-   <zorder>widget</zorder>
    <zorder>btn_close</zorder>
    <zorder>btn_minimize</zorder>
    <zorder>search_bar</zorder>
    <zorder>search_bar_line</zorder>
    <zorder>label_2</zorder>
+   <zorder>widget</zorder>
   </widget>
  </widget>
  <resources>
