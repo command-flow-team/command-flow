@@ -281,125 +281,7 @@ color: white;
      <string>search </string>
     </property>
    </widget>
-   <widget class="QStackedWidget" name="mainZone">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>40</y>
-      <width>721</width>
-      <height>561</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 20px;</string>
-    </property>
-    <property name="currentIndex">
-     <number>1</number>
-    </property>
-    <widget class="QWidget" name="homePage">
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>50</y>
-        <width>151</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #2C3037;
-color: white;
-font: 600 24pt &quot;Afacad Flux&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Home page</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="homePage_background" native="true">
-      <property name="geometry">
-       <rect>
-        <x>-1</x>
-        <y>-1</y>
-        <width>741</width>
-        <height>561</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #2C3037;</string>
-      </property>
-     </widget>
-     <zorder>homePage_background</zorder>
-     <zorder>label</zorder>
-    </widget>
-    <widget class="QWidget" name="ccmdPage">
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <widget class="QPushButton" name="add_ccmd_button">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>100</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: tomato;
-border-radius: 15;
-font: 700 21pt &quot;Afacad Flux&quot;;
-color: white;</string>
-      </property>
-      <property name="text">
-       <string>add card</string>
-      </property>
-     </widget>
-     <widget class="QScrollArea" name="ccmd_zone">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>0</y>
-        <width>561</width>
-        <height>561</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #2C3037;</string>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>561</width>
-         <height>561</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="ccmd_side_bar" native="true">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>171</width>
-        <height>561</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #2C3037;
-border-radius: 15px;</string>
-      </property>
-     </widget>
-     <zorder>ccmd_side_bar</zorder>
-     <zorder>ccmd_zone</zorder>
-     <zorder>add_ccmd_button</zorder>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="side_bar" native="true">
     <property name="geometry">
      <rect>
       <x>-20</x>
@@ -552,7 +434,7 @@ font: 700 28pt &quot;Afacad Flux&quot;;</string>
      <string notr="true"/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="search_bar_icon">
     <property name="geometry">
      <rect>
       <x>225</x>
@@ -574,14 +456,145 @@ font: 700 28pt &quot;Afacad Flux&quot;;</string>
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QWidget" name="mainZone" native="true">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>741</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #2C3037;
+border-radius: 15px;</string>
+    </property>
+    <widget class="QStackedWidget" name="pageZone">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>721</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="homePage">
+      <widget class="QLabel" name="home_page_label">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>50</y>
+         <width>151</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2C3037;
+color: white;
+font: 600 24pt &quot;Afacad Flux&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Home page</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="homePage_background" native="true">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>0</y>
+         <width>741</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2C3037;</string>
+       </property>
+      </widget>
+      <zorder>homePage_background</zorder>
+      <zorder>home_page_label</zorder>
+     </widget>
+     <widget class="QWidget" name="ccmdPage">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QScrollArea" name="ccmd_zone">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>-10</y>
+         <width>561</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2C3037;</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>561</width>
+          <height>561</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="ccmd_side_bar" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>171</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2C3037;
+border-radius: 15px;</string>
+       </property>
+       <widget class="QPushButton" name="add_ccmd_button">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: tomato;
+border-radius: 15;
+font: 700 21pt &quot;Afacad Flux&quot;;
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>add card</string>
+        </property>
+       </widget>
+      </widget>
+      <zorder>ccmd_side_bar</zorder>
+      <zorder>ccmd_zone</zorder>
+     </widget>
+    </widget>
+   </widget>
    <zorder>mainZone</zorder>
    <zorder>title_bar</zorder>
    <zorder>btn_close</zorder>
    <zorder>btn_minimize</zorder>
    <zorder>search_bar</zorder>
    <zorder>search_bar_line</zorder>
-   <zorder>label_2</zorder>
-   <zorder>widget</zorder>
+   <zorder>search_bar_icon</zorder>
+   <zorder>side_bar</zorder>
   </widget>
  </widget>
  <resources>

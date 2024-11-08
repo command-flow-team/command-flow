@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
         self.ccmd_zone.setStyleSheet('''border-radius: 7px; background-color: #2C3037;''')
 
         # Set up NavigationController
-        self.navigator = NavigationController(self.mainZone)
+        self.navigator = NavigationController(self.pageZone)
         self.navigator.go_to_default()
 
         # Initialize ccmd_widgets and connect button
