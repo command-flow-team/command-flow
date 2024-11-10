@@ -1,5 +1,15 @@
 <RCC>
   <qresource prefix="icons">
+    <file>command-icon-qt-inactive.png</file>
+    <file>home-icon-qt-inactive-hover.png</file>
+    <file>command-icon-qt-inactive-hover.png</file>
+    <file>command-icon-qt.png</file>
+    <file>command-icon-qt-hover.png</file>
+    <file>command-icon-qt-pressed.png</file>
+    <file>home-icon-qt-inactive.png</file>
+    <file>home-icon-qt.png</file>
+    <file>home-icon-qt-hover.png</file>
+    <file>home-icon-qt-pressed.png</file>
     <file>command-icon-svg.png</file>
     <file>home-icon-svg.png</file>
     <file>search_icon.png</file>
