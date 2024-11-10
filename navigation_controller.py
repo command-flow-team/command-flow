@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import QStackedWidget
+from PyQt5.QtGui import QIcon
 
 
 class NavigationController:
@@ -9,7 +10,7 @@ class NavigationController:
         self.stacked_widget = stacked_widget
 
     def go_to_home(self):
-        self.stacked_widget.setCurrentIndex(0)
+        self.stacked_widget.setCurrentIndex(0)      
 
     def go_to_command(self):
         self.stacked_widget.setCurrentIndex(1)
