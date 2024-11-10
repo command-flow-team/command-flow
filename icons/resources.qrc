@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icons">
+    <file>home-icon-qt.png</file>
     <file>command-icon-qt-inactive.png</file>
     <file>home-icon-qt-inactive-hover.png</file>
     <file>command-icon-qt-inactive-hover.png</file>
@@ -7,7 +8,6 @@
     <file>command-icon-qt-hover.png</file>
     <file>command-icon-qt-pressed.png</file>
     <file>home-icon-qt-inactive.png</file>
-    <file>home-icon-qt.png</file>
     <file>home-icon-qt-hover.png</file>
     <file>home-icon-qt-pressed.png</file>
     <file>command-icon-svg.png</file>

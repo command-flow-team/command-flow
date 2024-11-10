@@ -393,7 +393,7 @@ color: white;
 }
 QPushButton:Pressed
 {
-color: tomato;
+color: #EA526F;
 }</string>
     </property>
     <property name="text">
@@ -581,13 +581,13 @@ border-radius: 15px;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: tomato;
+         <string notr="true">background-color: #EA526F;
 border-radius: 15;
 font: 700 21pt &quot;Afacad Flux&quot;;
 color: white;</string>
         </property>
         <property name="text">
-         <string>add card</string>
+         <string>add desk</string>
         </property>
        </widget>
       </widget>
