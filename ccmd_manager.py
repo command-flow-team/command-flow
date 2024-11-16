@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout, QScrollArea, QHBoxLayout
 from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QSizePolicy
 
 class CommandCard(QWidget):
     def __init__(self, label_text, number, *args, **kwargs):

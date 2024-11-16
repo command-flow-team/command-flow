@@ -1,17 +1,26 @@
 <RCC>
   <qresource prefix="icons">
-    <file>home-icon-qt.png</file>
-    <file>command-icon-qt-inactive.png</file>
-    <file>home-icon-qt-inactive-hover.png</file>
-    <file>command-icon-qt-inactive-hover.png</file>
+    <file>close-icon-qt.png</file>
+    <file>close-icon-qt-hover.png</file>
+    <file>close-icon-qt-pressed.png</file>
     <file>command-icon-qt.png</file>
     <file>command-icon-qt-hover.png</file>
+    <file>command-icon-qt-inactive.png</file>
+    <file>command-icon-qt-inactive-hover.png</file>
     <file>command-icon-qt-pressed.png</file>
-    <file>home-icon-qt-inactive.png</file>
-    <file>home-icon-qt-hover.png</file>
-    <file>home-icon-qt-pressed.png</file>
     <file>command-icon-svg.png</file>
+    <file>home-icon-qt.png</file>
+    <file>home-icon-qt-hover.png</file>
+    <file>home-icon-qt-inactive.png</file>
+    <file>home-icon-qt-inactive-hover.png</file>
+    <file>home-icon-qt-pressed.png</file>
     <file>home-icon-svg.png</file>
+    <file>maximize-icon-qt.png</file>
+    <file>maximize-icon-qt-hover.png</file>
+    <file>maximize-icon-qt-pressed.png</file>
+    <file>minimize-icon-qt.png</file>
+    <file>minimize-icon-qt-hover.png</file>
+    <file>minimize-icon-qt-pressed.png</file>
     <file>search_icon.png</file>
     <file>settings-icon-svg.png</file>
     <file>wave-spiral-sphere.png</file>
