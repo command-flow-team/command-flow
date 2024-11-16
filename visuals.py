@@ -4,7 +4,6 @@ from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QGraphicsDropShadowEffect
 from PyQt5.QtWidgets import QSizePolicy
 
-
 class VisualApplier:
     def __init__(self, home_button, cmd_button):
         self.home_button = home_button
@@ -17,7 +16,6 @@ class VisualApplier:
         shadow.setColor(QColor(r, g, b, alpha))
         shadow.setOffset(dx, dy)
         cwidget.setGraphicsEffect(shadow)
-
 
     """ UPDATING ICONS IN APP """
     def active_tab_icons_update(self, active_tab):
@@ -108,4 +106,3 @@ class VisualApplier:
                     background-repeat: no-repeat;
                 }
             """)
-        
