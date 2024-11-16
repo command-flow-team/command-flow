@@ -2,6 +2,7 @@ import sys
 import resources
 from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QGraphicsDropShadowEffect
+from PyQt5.QtWidgets import QSizePolicy
 
 
 class VisualApplier:

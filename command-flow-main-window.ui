@@ -10,18 +10,6 @@
     <height>600</height>
    </rect>
   </property>
-  <property name="minimumSize">
-   <size>
-    <width>800</width>
-    <height>600</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>800</width>
-    <height>600</height>
-   </size>
-  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -305,7 +293,13 @@ border-radius: 27;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">QPushButton 
+                {
+                    border-radius: 0px;
+                    border-image: url(:/icons/home-icon-qt.png);
+                    background-repeat: no-repeat;
+
+                }</string>
      </property>
      <property name="text">
       <string/>
@@ -327,7 +321,15 @@ border-radius: 27;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">QPushButton 
+                {
+                    border-radius: 0px;
+                    border-image: url(:/icons/command-icon-qt-inactive.png);
+                    width: 32px;
+                    height: 32px;
+                    background-repeat: no-repeat;
+
+                }</string>
      </property>
      <property name="text">
       <string/>
@@ -403,7 +405,7 @@ color: #EA526F;
    <widget class="QPushButton" name="btn_minimize">
     <property name="geometry">
      <rect>
-      <x>720</x>
+      <x>680</x>
       <y>0</y>
       <width>41</width>
       <height>41</height>
@@ -442,6 +444,36 @@ color: #009B72;
     <property name="styleSheet">
      <string notr="true"/>
     </property>
+    <widget class="QPushButton" name="btn_maximize">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>0</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color: #151515;
+border-radius: 20;
+color: #757575;
+font: 700 28pt &quot;Afacad Flux&quot;;
+}
+QPushButton:Hover
+{
+color: white;
+}
+QPushButton:Pressed
+{
+color: #009B72;
+}</string>
+     </property>
+     <property name="text">
+      <string>D</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="search_bar_icon">
     <property name="geometry">

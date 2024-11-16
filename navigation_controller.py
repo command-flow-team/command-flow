@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QStackedWidget
 from PyQt5.QtGui import QIcon
 from visuals import VisualApplier
-
+from PyQt5.QtWidgets import QSizePolicy
 
 class NavigationController:
 
