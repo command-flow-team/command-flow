@@ -1,12 +1,12 @@
 import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import Qt, QPoint, QPropertyAnimation, QEasingCurve
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtWidgets import QMainWindow, QApplication, QGraphicsBlurEffect
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon
 
 from navigation_controller import NavigationController
-from ccmd_manager import CcmdWidgets
+from ccmd_manager import CDeskWidget
 from visuals import VisualApplier
 
 import ctypes
@@ -45,12 +45,13 @@ class MainWindow(QMainWindow):
         (CURRENTLY HOME PAGE)"""
         self.navigator = NavigationController(self.pageZone, self.vis, self.home_button, self.cmd_button)
         self.navigator.home_active()
+        
 
         """ SET UP COMMAND WIDGETS """
-        self.ccmd_manager = CcmdWidgets(self.ccmd_zone)
+        self.ccmd_manager = CDeskWidget(self.ccmd_zone)
 
         """ BUTTONS CONNECTIONS """
-        self.add_ccmd_button.clicked.connect(lambda: self.ccmd_manager.create_ccmd("test card", 993))
+        self.add_ccmd_button.clicked.connect(lambda: self.ccmd_manager.create_desk("workspace configurator", "Launches essentials, loading mail.", "on-launch"))
         self.home_button.clicked.connect(self.navigator.home_active)
         self.cmd_button.clicked.connect(self.navigator.cmd_active)
 
